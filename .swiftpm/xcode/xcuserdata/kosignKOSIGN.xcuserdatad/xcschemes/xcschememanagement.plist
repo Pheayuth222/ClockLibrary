@@ -25,5 +25,23 @@
 			<integer>4</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>ClockPackage_ClockUI_iOS</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ClockUI</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ClockUI_iOS</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

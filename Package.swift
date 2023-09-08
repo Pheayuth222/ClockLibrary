@@ -17,6 +17,7 @@ let package = Package(
             "ClockUI"
         ], resources: [
             .process("Resources/ClockViewController_iOS.xib"),
+            .process("Resources/CustomAlertVC_iOS.xib"),
         ]),
         
     ]

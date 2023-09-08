@@ -16,6 +16,8 @@ public class CustomAlertVC: UIViewController {
     
     weak var delegate : CustomAlertDelegate?
     
+    var customAlert = CustomAlertVC()
+    
     public var alertTag = 0
     public var isCancelBtnHidden = false
     public var alertTitle = ""
@@ -31,16 +33,20 @@ public class CustomAlertVC: UIViewController {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var alertView: UIView!
     
-    init() {
-        super.init(nibName: "CustomAlertVC", bundle: Bundle(for: CustomAlertVC.self))
-        self.modalPresentationStyle = .overCurrentContext
-        self.modalTransitionStyle = .crossDissolve
-        
+    public static func loadFromNib() -> CustomAlertVC {
+        CustomAlertVC(nibName: "CustomAlertVC_iOS", bundle: Bundle.module)
     }
     
-    required public init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    init() {
+//        super.init(nibName: "CustomAlertVC", bundle: Bundle(for: CustomAlertVC.self))
+//        self.modalPresentationStyle = .overCurrentContext
+//        self.modalTransitionStyle = .crossDissolve
+//
+//    }
+    
+//    required public init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()

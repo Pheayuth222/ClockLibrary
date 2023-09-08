@@ -15,8 +15,7 @@ public protocol CustomAlertDelegate: AnyObject {
 public class CustomAlertVC: UIViewController {
     
     weak var delegate : CustomAlertDelegate?
-    
-    var customAlert = CustomAlertVC()
+
     
     public var alertTag = 0
     public var isCancelBtnHidden = false
